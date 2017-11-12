@@ -613,6 +613,7 @@ input[disabled] {
 .burger-customize input[type="radio"], input[type="checkbox"] {
 	vertical-align:middle;
 	margin:2px 0 4px 0;
+	width: 20px;
 }
 .burger-customize label {
 	font-weight:normal;
