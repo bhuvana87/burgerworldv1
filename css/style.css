@@ -777,13 +777,14 @@ h3.delivery-time {
 	font-style:normal;
 }
 .order-confirmation h3 span {
-	background:#d02104;
-	border-radius:100%;
-	width:22px;
-	height:22px;
-	vertical-align:middle;
-	display:inline-block;
-	text-align:center;
+	background: #d02104;
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
 }
 .order-confirmation .bottomline {
 	border-bottom:dotted 1px #ea9c03;
