@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- The full page image background will only work if the html has the custom class set to it! Don't delete it! -->
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Burger World - Order Online</title>
+
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="theme/css/font/FontAwesome/css/font-awesome.css" />
+	
+
+ <link href="css/DateTimePicker.css" rel="stylesheet">
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+   
+<!-- Custom CSS for the 'Full' Template -->
+<link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style_common.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <link href='css/mapbox.css' rel='stylesheet' />
+
+        
+</head>
+
+<body class="full">
+
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container"> 
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="bs-example">
+      <nav id="myNavbar" class="navbar navbar-default" role="navigation"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" title="" class="logo"></a> </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+              <li><a href="#">Home</a></li>
+              <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Menu <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Beef</a></li>
+                  <li><a href="#">Chicken &amp; Fish</a></li>
+                  <li><a href="#">Salads &amp; Wraps</a></li>
+                  <li><a href="#">Sides &amp; Desserts</a></li>
+                </ul>
+              </li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Franchise</a></li>
+              <li><a href="#">Promotions</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Order Online</a></li>
+              <li><a href="#">Contact Us</a></li>
+               <li><a href="#">FAQ</a></li>
+            </ul>
+            
+          </div>
+          <!-- /.navbar-collapse --> 
+        </div>
+      </nav>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  
+  <!-- /.container --> 
+</nav>
+
+<!-- Page content goes here -->
+<div id='map' class='dark'><!-- Modal -->
+
+              <div class="modal fade" id="order-options" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <button type="button" class="close btn-default" data-dismiss="modal"><i class="close-icn">&times;</i></button>
+                  <h2>Choose the path to get your Burger</h2>                   
+                    <div class="modal-body"> 
+                    <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <label><img src="img/pickup-icon.png" alt="Pick Up" title="Pick Up"><br><input name="" value="" type="radio" data-toggle="collapse" onclick="document.location='order-items-takeaway.html';"> Takeaway</label>
+  </div>
+  <div class="panel panel-default">
+    <label><img src="img/delivery-icon.png" alt="Delivery" title="Delivery"><br><input name="" value="" type="radio" onclick="document.location='order-items-delivery.html';"> Delivery</label>
+  </div>
+</div>                                
+                    </div>
+                  </div>
+                  <!-- /.modal-content --> 
+                  
+                </div>
+                <!-- /.modal-dialog --> 
+              </div>
+              <!-- /.modal --> </div>
+<div class="container">
+  <div class="main-content-panel locations">
+    <div class="row">
+  </div>
+    
+  </div>
+</div>
+
+<footer>
+<div class="register-links order-online">
+<div class="container">
+ <!-- Login Modal Starts-->
+            <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content register-links-cont">
+                  <button type="button" class="close btn-default" data-dismiss="modal"><i class="close-icn">&times;</i></button>
+                  <h2>Login to your account</h2>   
+                    <div class="modal-body"> 
+               
+                           <span><input type="text" placeholder="User Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'User Name'"> <strong>*</strong></span>
+                            
+                           <span><input type="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'"> <strong>*</strong></span>
+                          <span><input type="checkbox"> Remember Me </span> 
+                           <span><a href="#forgot-password" data-toggle="modal" data-dismiss="modal">Trouble logging in?</a> | <a href="#register" data-toggle="modal" data-dismiss="modal">Create an Account</a></span>
+													<span><button type="submit" class="btn">Login</button></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Login Modal Ends --> 
+               
+              <!-- Register Modal Starts-->
+              <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content register-links-cont">
+                  <button type="button" class="close btn-default" data-dismiss="modal"><i class="close-icn">&times;</i></button>
+                  <h2>Register with Burger World</h2>   
+                  <p><strong>*</strong> Required Fields</p>                
+                    <div class="modal-body"> 
+                    
+              <div class="row"> <div class="col-sm-6">
+               <input type="text" placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'"> <strong>*</strong>
+               </div>
+               <div class="col-sm-6">
+               <input type="email" placeholder="Email ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email ID'"> <strong>*</strong>
+               </div>
+               <div class="col-sm-6">
+               <input type="number" placeholder="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'"> <strong>*</strong>
+               </div>
+               
+               <div class="col-sm-6">
+               <input type="text" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'"> <strong>*</strong>
+               </div>               
+               <div class="col-sm-6">
+              <input type="text" placeholder="City" onfocus="this.placeholder = ''" onblur="this.placeholder = 'City'"> <strong>*</strong>
+               </div>
+               <div class="col-sm-6">
+               <input type="text" placeholder="State" onfocus="this.placeholder = ''" onblur="this.placeholder = 'State'"> <strong>*</strong>
+               </div>
+               <div class="col-sm-6">
+               <select name="country" id="country">
+    						<option value="Country" class="option-first">Country</option>
+    						<option value="AR">Argentina</option>
+    						<option value="AU">Australia</option>
+    						<option value="AT">Austria</option>
+    						<option value="BY">Belarus</option>
+    						<option value="BE">Belgium</option>
+    						<option value="BA">Bosnia and Herzegovina</option>
+    						<option value="BR">Brazil</option>
+    						<option value="BG">Bulgaria</option>
+    						<option value="CA">Canada</option>
+    						<option value="CL">Chile</option>
+    						<option value="CN">China</option>
+    						<option value="CO">Colombia</option>
+    						<option value="CR">Costa Rica</option>
+    						<option value="HR">Croatia</option>
+    						<option value="CU">Cuba</option>
+    						<option value="CY">Cyprus</option>
+    						<option value="CZ">Czech Republic</option>
+    						<option value="DK">Denmark</option>
+    						<option value="DO">Dominican Republic</option>
+    						<option value="EG">Egypt</option>
+    						<option value="EE">Estonia</option>
+    						<option value="FI">Finland</option>
+    						<option value="FR">France</option>
+    						<option value="GE">Georgia</option>
+    						<option value="DE">Germany</option>
+    						<option value="GI">Gibraltar</option>
+    						<option value="GR">Greece</option>
+    						<option value="HK">Hong Kong S.A.R., China</option>
+    						<option value="HU">Hungary</option>
+    						<option value="IS">Iceland</option>
+    						<option value="IN">India</option>
+    						<option value="ID">Indonesia</option>
+    						<option value="IR">Iran</option>
+    						<option value="IQ">Iraq</option>
+    						<option value="IE">Ireland</option>
+    						<option value="IL">Israel</option>
+    						<option value="IT">Italy</option>
+    						<option value="JM">Jamaica</option>
+    						<option value="JP">Japan</option>
+    						<option value="KZ">Kazakhstan</option>
+    						<option value="KW">Kuwait</option>
+    						<option value="KG">Kyrgyzstan</option>
+    						<option value="LA">Laos</option>
+    						<option value="LV">Latvia</option>
+    						<option value="LB">Lebanon</option>
+    						<option value="LT">Lithuania</option>
+    						<option value="LU">Luxembourg</option>
+    						<option value="MK">Macedonia</option>
+    						<option value="MY">Malaysia</option>
+    						<option value="MT">Malta</option>
+    						<option value="MX">Mexico</option>
+    						<option value="MD">Moldova</option>
+    						<option value="MC">Monaco</option>
+    						<option value="ME">Montenegro</option>
+    						<option value="MA">Morocco</option>
+    						<option value="NL">Netherlands</option>
+    						<option value="NZ">New Zealand</option>
+    						<option value="NI">Nicaragua</option>
+    						<option value="KP">North Korea</option>
+    						<option value="NO">Norway</option>
+    						<option value="PK">Pakistan</option>
+    						<option value="PS">Palestinian Territory</option>
+    						<option value="PE">Peru</option>
+    						<option value="PH">Philippines</option>
+    						<option value="PL">Poland</option>
+    						<option value="PT">Portugal</option>
+    						<option value="PR">Puerto Rico</option>
+    						<option value="QA">Qatar</option>
+    						<option value="RO">Romania</option>
+    						<option value="RU">Russia</option>
+    						<option value="SA">Saudi Arabia</option>
+    						<option value="RS">Serbia</option>
+    						<option value="SG">Singapore</option>
+    						<option value="SK">Slovakia</option>
+    						<option value="SI">Slovenia</option>
+    						<option value="ZA">South Africa</option>
+    						<option value="KR">South Korea</option>
+    						<option value="ES">Spain</option>
+    						<option value="LK">Sri Lanka</option>
+    						<option value="SE">Sweden</option>
+    						<option value="CH">Switzerland</option>
+    						<option value="TW">Taiwan</option>
+    						<option value="TH">Thailand</option>
+    						<option value="TN">Tunisia</option>
+    						<option value="TR">Turkey</option>
+    						<option value="UA">Ukraine</option>
+    						<option value="AE">United Arab Emirates</option>
+    						<option value="GB">United Kingdom</option>
+    						<option value="US">USA</option>
+    						<option value="UZ">Uzbekistan</option>
+    						<option value="VN">Vietnam</option>
+    					</select> <strong>*</strong>
+               </div>
+               <div class="col-sm-6">
+               <input type="text" placeholder="Zipcode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Zipcode'"> <strong>*</strong>
+               </div>
+               <div class="col-sm-6"><input type="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'"> <strong>*</strong></div>
+                           <div class="col-sm-6"><input type="password" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'"> <strong>*</strong></div></div><br>
+                           <span><input type="checkbox"> Accept Terms & Conditions</span>
+                           <span><button type="submit" class="btn">Register</button></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Register Modal Ends --> 
+               <!-- Forgot Passwword Starts-->
+              <div class="modal fade" id="forgot-password" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content register-links-cont">
+                  <button type="button" class="close btn-default" data-dismiss="modal"><i class="close-icn">&times;</i></button>
+                  <h2>Forgot your Password?</h2>  
+                  <p>Enter your Email ID. A link wil be mailed to reset your password.</p>                 
+                    <div class="modal-body"> 
+                    <span><input type="email" placeholder="Email ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email ID'"></span>
+                    
+													<span><button type="submit" class="btn">Reset</button></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Forgot Passwword Ends --> 
+    <div class="col-sm-12 col-md-12 col-lg-8">
+      <p>Select Nearby Location and Order your Burger Online</p>
+    </div>
+    <div class="col-lg-4 col-sm-12 col-md-12 text-right"> <a data-toggle="modal" href="#register"><i class="fa fa-user"></i> Register</a> <a data-toggle="modal" href="#login"><i class="fa fa-sign-in"></i> Login</a>  </div>
+</div>
+</div>
+  <div class="footer">
+    <div class="container row">
+      <div class="col-lg-10 col-md-10 col-sm-10 text-left"> Copyright &copy; 2013 burgerworldme.com. All Rights Reserved. | <a href="http://www.triadwebdesign.com/" target="_blank">Website Design By Triad Web Design</a> </div>
+      <div class="col-lg-2 col-md-2 col-sm-2 text-right"> <img src="img/footer-logo.png" alt="Burger World" title="Burger World"> </div>
+    </div>
+  </div>
+  <div class="container ftr-btm-links"> <a href="" class="first-link">Home</a>| <a href="">Menu</a>| <a href="">About</a>| <a href="">Franchise</a>| <a href="">Promotions</a>| <a href="">Careers</a>| <a href="">Locations</a>| <a href="">Contact Us</a>| <a href="">Sitemap</a> </div>
+</footer>
+
+<!-- JavaScript --> 
+
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/jquery.nicescroll.min.js"></script> 
+<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js'></script>
+<script>// Hide Overflow of Body on DOM Ready //
+$(document).ready(function(){
+    $("body").css("overflow", "hidden");
+   
+});
+
+// Show Overflow of Body when Everything has Loaded //
+$(window).load(function(){
+    $("body").css("overflow", "auto");        
+    var nice=$('html').niceScroll({cursorborder:"",cursorcolor:"#d08f04",cursorwidth:"5px"});
+});</script> 
+<script>
+$(function(){
+    $('.logo').data('size','big');
+});
+
+$(window).scroll(function(){
+    var $nav = $('.logo');
+    if ($('body').scrollTop() > 0) {
+        if ($nav.data('size') == 'big') {
+            $nav.data('size','small').stop().animate({
+                height:'80px'
+            }, 600);
+        }
+    } else {
+        if ($nav.data('size') == 'small') {
+            $nav.data('size','big').stop().animate({
+                height:'136px'
+            }, 600);
+        }  
+    }
+});
+</script>
+
+
+		<script type="text/javascript" src="js/DateTimePicker.js"></script>
+<script type="text/javascript">
+		
+			$(document).ready(function()
+			{
+				$("#dtBox").DateTimePicker({
+				
+					dateFormat: "MM-dd-yyyy",
+					timeFormat: "HH:mm",
+					dateTimeFormat: "MM-dd-yyyy HH:mm:ss"
+				
+				});
+
+         
+			});
+		
+		</script>
+        
+
+       
+        <script>
+		$('.accordion-toggle').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $collapse = $this.closest('.collapse-group').find('.collapse');
+
+   });
+   
+</script>
+<script src='js/Mapbox.js'></script>
+<script>
+ var map = L.mapbox.map('map', 'burger.i2l75gab')
+    .setView([25.172, 55.295], 12);
+	
+	/*// disable drag and zoom handlers
+map.dragging.disable();
+map.touchZoom.disable();
+map.doubleClickZoom.disable();
+map.scrollWheelZoom.disable();
+// disable tap handler, if present.
+if (map.tap) map.tap.disable();*/
+
+var myLayer = L.mapbox.featureLayer().addTo(map);
+
+var geoJson = [{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [55.389793, 25.117513]
+    },
+    "properties": {
+       "title": "<h3>Silicon Oasis</h3>",
+      "description": "<address>Ground Floor, Spring Oasis Tower (Choithrams supermarket), Dubai Silicon Oasis, Dubai</address><h5>Opening Hours: 12 Noon to 12 Midnight</h5> <a href='http://burgerworld-netlify.com/order-items.html' class='order'>Order Now</a>",
+        "icon": {
+            "iconUrl": "img/location-icn.png",
+            "iconSize": [50, 50], // size of the icon
+            "iconAnchor": [25, 25], // point of the icon which will correspond to marker's location
+            "popupAnchor": [0, -25], // point from which the popup should open relative to the iconAnchor
+            "className": "dot"
+        }
+    }
+}, 
+{
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [55.41281900000001, 25.174544]
+    },
+    "properties": {
+      "title": "<h3>Dragon Mart 1</h3>",
+      "description": "<address>No. DHFF01-F&B08, First Floor, Food Court, Dragon Mart, Al Awir Road, Dubai</address><h5>Opening Hours: 10 AM to 10 PM</h5> <a href='http://burgerworld-netlify.com/order-items.html' class='order'>Order Now</a>",
+     "icon": {
+            "iconUrl": "img/location-icn.png",
+            "iconSize": [50, 50], // size of the icon
+            "iconAnchor": [25, 25], // point of the icon which will correspond to marker's location
+            "popupAnchor": [0, -25], // point from which the popup should open relative to the iconAnchor
+            "className": "dot"
+        }
+		
+    },
+},
+{
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [55.390949, 25.229363]
+    },
+    "properties": {
+      "title": "<h3>Rashidiya</h3>",
+      "description": "<address>Ground Floor (Next to KFC), Lootah Market, Opposite of Rashidiya Metro Station, Rashidiya, Dubai</address><h5>Opening Hours: 12 Noon to 12 Midnight</h5> <a href='http://burgerworld-netlify.com/order-items.html' class='order'>Order Now</a>",
+     "icon": {
+            "iconUrl": "img/location-icn.png",
+            "iconSize": [50, 50], // size of the icon
+            "iconAnchor": [25, 25], // point of the icon which will correspond to marker's location
+            "popupAnchor": [0, -25], // point from which the popup should open relative to the iconAnchor
+            "className": "dot"
+        }
+		
+    },
+	},
+{
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+      "coordinates": [55.219180, 25.140436]
+    },
+    "properties": {
+        "title": "<h3>Times Square Center</h3>",
+      "description": "<address>Shop Number D03, First Floor Food Court, Times Square Center, Sheikh Zayed Road, Dubai</address><h5>Opening Hours: 10 AM to 10 PM</h5> <a href='http://burgerworld-netlify.com/order-items.html' class='order'>Order Now</a>",
+     "icon": {
+            "iconUrl": "img/location-icn.png",
+            "iconSize": [50, 50], // size of the icon
+            "iconAnchor": [25, 25], // point of the icon which will correspond to marker's location
+            "popupAnchor": [0, -25], // point from which the popup should open relative to the iconAnchor
+            "className": "dot"
+        }
+		
+    },
+	},
+{
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+      "coordinates": [55.210405, 25.147570]
+    },
+    "properties": {
+      "title": "<h3>J3 Mall Jumeirah</h3>",
+      "description": "<address>Shop Number 3, Food Court, 2nd Floor, J3 Mall, Al Wasl Road, Dubai</address><h5>Opening Hours: 10 AM to 10 PM</h5> <a href='http://burgerworld-netlify.com/order-items.html' class='order'>Order Now</a>",
+     "icon": {
+            "iconUrl": "img/location-icn.png",
+            "iconSize": [50, 50], // size of the icon
+            "iconAnchor": [25, 25], // point of the icon which will correspond to marker's location
+            "popupAnchor": [0, -25], // point from which the popup should open relative to the iconAnchor
+            "className": "dot"
+        }
+		
+    },
+	
+
+}];
+
+// Set a custom icon on each marker based on feature properties
+myLayer.on('layeradd', function(e) {
+    var marker = e.layer,
+        feature = marker.feature;
+
+    marker.setIcon(L.icon(feature.properties.icon));
+});
+
+// Add features to the map
+myLayer.setGeoJSON(geoJson);
+
+</script>
+
+</body>
+</html>

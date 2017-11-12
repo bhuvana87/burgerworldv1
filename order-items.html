@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- The full page image background will only work if the html has the custom class set to it! Don't delete it! -->
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Burger World - Order Online</title>
+
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="theme/css/font/FontAwesome/css/font-awesome.css" />
+	
+<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
+
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+   <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+<!-- Custom CSS for the 'Full' Template -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/jquery.sidr.dark.css" rel="stylesheet">
+
+</head>
+
+<body class="full">
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+  <div class="container"> 
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="bs-example">
+      <nav id="myNavbar" class="navbar navbar-default" role="navigation"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" title="" class="logo"></a> </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+              <li><a href="#">Home</a></li>
+              <li class="dropdown"> <a href="#" data-toggle="dropdown" class="dropdown-toggle">Menu <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Beef</a></li>
+                  <li><a href="#">Chicken &amp; Fish</a></li>
+                  <li><a href="#">Salads &amp; Wraps</a></li>
+                  <li><a href="#">Sides &amp; Desserts</a></li>
+                </ul>
+              </li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Franchise</a></li>
+              <li><a href="#">Promotions</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Locations</a></li>
+              <li><a href="order-online.html">Order Online</a></li>
+              <li><a href="#">Contact Us</a></li>
+               <li><a href="#">FAQ</a></li>
+            </ul>
+            
+          </div>
+          <!-- /.navbar-collapse --> 
+        </div>
+      </nav>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  
+  <!-- /.container --> 
+</nav>
+
+<!-- Page content goes here -->
+<div class="container">
+ <div class="col-lg-2 col-md-2 col-sm-2"></div>
+  <div class="register-links col-md-10 col-sm-10 col-lg-10">
+    <div class="col-sm-12 col-md-12 col-lg-8 inner-location">
+      <p><a href="https://www.google.com/maps/place/Burger+World/@25.117294,55.389814,17z/data=!3m1!4b1!4m2!3m1!1s0x3e5f646e683d97b3:0x10e04846246db70e" target="_blank"><i class="fa fa-map-marker"></i> Ground Floor, Spring Oasis Tower, Dubai Silicon Oasis, Dubai</a></p>
+      <p><i class="fa fa-clock-o"></i> 12 Noon to 12 Midnight</p>
+    </div>
+    <div class="col-lg-4 col-sm-12 col-md-12 text-right"> <a data-toggle="modal" href="#register"><i class="fa fa-user"></i> Register</a> <a data-toggle="modal" href="#login"><i class="fa fa-sign-in"></i> Login</a> <span><a href="#forgot-password" data-toggle="modal">Forgot Password</a></span> </div>
+    <!-- Login Modal Starts-->
+            <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content register-links-cont">
+                  <button type="button" class="close btn-default" data-dismiss="modal"><i class="close-icn">&times;</i></button>
+                  <h2>Login to your account</h2>   
+                    <div class="modal-body"> 
+               
+                           <span><input type="text" placeholder="User Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'User Name'"> <strong>*</strong></span>
+                            
+                           <span><input type="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'"> <strong>*</strong></span>
+                          <span><input type="checkbox"> Remember Me </span> 
+                           <span><a href="#forgot-password" data-toggle="modal" data-dismiss="modal">Trouble logging in?</a> | <a href="#register" data-toggle="modal" data-dismiss="modal">Create an Account</a></span>
+													<span><button type="submit" class="btn" onClick="window.location.href='order-confirmation.html'">Login</button></span>
+                                                   
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Login Modal Ends --> 
+               
+              <!-- Register Modal Starts-->
+              <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content register-links-cont">
+                  <button type="button" class="close btn-default" data-dismiss="modal"><i class="close-icn">&times;</i></button>
+                  <h2>Register with Burger World</h2>   
+                  <p><strong>*</strong> Required Fields</p>                
+                    <div class="modal-body"> 
+                    
+              <div class="row"> <div class="col-sm-6">
+               <input type="text" placeholder="Full Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Full Name'"> <strong>*</strong>
+               </div>
+               <div class="col-sm-6">
+               <input type="email" placeholder="Email ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email ID'"> <strong>*</strong>
+               </div>
+               <div class="col-sm-6">
+               <input type="number" placeholder="Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone'"> <strong>*</strong>
+               </div>
+               
+               <div class="col-sm-6">
+               <input type="text" placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'"> <strong>*</strong>
+               </div>               
+               <div class="col-sm-6">
+              <input type="text" placeholder="City" onfocus="this.placeholder = ''" onblur="this.placeholder = 'City'"> <strong>*</strong>
+               </div>
+               <div class="col-sm-6">
+               <input type="text" placeholder="State" onfocus="this.placeholder = ''" onblur="this.placeholder = 'State'"> <strong>*</strong>
+               </div>
+               <div class="col-sm-6">
+               <select name="country" id="country">
+    						<option value="Country" class="option-first">Country</option>
+    						<option value="AR">Argentina</option>
+    						<option value="AU">Australia</option>
+    						<option value="AT">Austria</option>
+    						<option value="BY">Belarus</option>
+    						<option value="BE">Belgium</option>
+    						<option value="BA">Bosnia and Herzegovina</option>
+    						<option value="BR">Brazil</option>
+    						<option value="BG">Bulgaria</option>
+    						<option value="CA">Canada</option>
+    						<option value="CL">Chile</option>
+    						<option value="CN">China</option>
+    						<option value="CO">Colombia</option>
+    						<option value="CR">Costa Rica</option>
+    						<option value="HR">Croatia</option>
+    						<option value="CU">Cuba</option>
+    						<option value="CY">Cyprus</option>
+    						<option value="CZ">Czech Republic</option>
+    						<option value="DK">Denmark</option>
+    						<option value="DO">Dominican Republic</option>
+    						<option value="EG">Egypt</option>
+    						<option value="EE">Estonia</option>
+    						<option value="FI">Finland</option>
+    						<option value="FR">France</option>
+    						<option value="GE">Georgia</option>
+    						<option value="DE">Germany</option>
+    						<option value="GI">Gibraltar</option>
+    						<option value="GR">Greece</option>
+    						<option value="HK">Hong Kong S.A.R., China</option>
+    						<option value="HU">Hungary</option>
+    						<option value="IS">Iceland</option>
+    						<option value="IN">India</option>
+    						<option value="ID">Indonesia</option>
+    						<option value="IR">Iran</option>
+    						<option value="IQ">Iraq</option>
+    						<option value="IE">Ireland</option>
+    						<option value="IL">Israel</option>
+    						<option value="IT">Italy</option>
+    						<option value="JM">Jamaica</option>
+    						<option value="JP">Japan</option>
+    						<option value="KZ">Kazakhstan</option>
+    						<option value="KW">Kuwait</option>
+    						<option value="KG">Kyrgyzstan</option>
+    						<option value="LA">Laos</option>
+    						<option value="LV">Latvia</option>
+    						<option value="LB">Lebanon</option>
+    						<option value="LT">Lithuania</option>
+    						<option value="LU">Luxembourg</option>
+    						<option value="MK">Macedonia</option>
+    						<option value="MY">Malaysia</option>
+    						<option value="MT">Malta</option>
+    						<option value="MX">Mexico</option>
+    						<option value="MD">Moldova</option>
+    						<option value="MC">Monaco</option>
+    						<option value="ME">Montenegro</option>
+    						<option value="MA">Morocco</option>
+    						<option value="NL">Netherlands</option>
+    						<option value="NZ">New Zealand</option>
+    						<option value="NI">Nicaragua</option>
+    						<option value="KP">North Korea</option>
+    						<option value="NO">Norway</option>
+    						<option value="PK">Pakistan</option>
+    						<option value="PS">Palestinian Territory</option>
+    						<option value="PE">Peru</option>
+    						<option value="PH">Philippines</option>
+    						<option value="PL">Poland</option>
+    						<option value="PT">Portugal</option>
+    						<option value="PR">Puerto Rico</option>
+    						<option value="QA">Qatar</option>
+    						<option value="RO">Romania</option>
+    						<option value="RU">Russia</option>
+    						<option value="SA">Saudi Arabia</option>
+    						<option value="RS">Serbia</option>
+    						<option value="SG">Singapore</option>
+    						<option value="SK">Slovakia</option>
+    						<option value="SI">Slovenia</option>
+    						<option value="ZA">South Africa</option>
+    						<option value="KR">South Korea</option>
+    						<option value="ES">Spain</option>
+    						<option value="LK">Sri Lanka</option>
+    						<option value="SE">Sweden</option>
+    						<option value="CH">Switzerland</option>
+    						<option value="TW">Taiwan</option>
+    						<option value="TH">Thailand</option>
+    						<option value="TN">Tunisia</option>
+    						<option value="TR">Turkey</option>
+    						<option value="UA">Ukraine</option>
+    						<option value="AE">United Arab Emirates</option>
+    						<option value="GB">United Kingdom</option>
+    						<option value="US">USA</option>
+    						<option value="UZ">Uzbekistan</option>
+    						<option value="VN">Vietnam</option>
+    					</select> <strong>*</strong>
+               </div>
+               <div class="col-sm-6">
+               <input type="text" placeholder="Zipcode" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Zipcode'"> <strong>*</strong>
+               </div>
+               <div class="col-sm-6"><input type="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'"> <strong>*</strong></div>
+                           <div class="col-sm-6"><input type="password" placeholder="Confirm Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm Password'"> <strong>*</strong></div></div><br>
+                           <span><input type="checkbox"> Accept Terms & Conditions</span>
+                           <span><button type="submit" class="btn">Register</button></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Register Modal Ends --> 
+               <!-- Forgot Passwword Starts-->
+              <div class="modal fade" id="forgot-password" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content register-links-cont">
+                  <button type="button" class="close btn-default" data-dismiss="modal"><i class="close-icn">&times;</i></button>
+                  <h2>Forgot your Password?</h2>  
+                  <p>Enter your Email ID. A link wil be mailed to reset your password.</p>                 
+                    <div class="modal-body"> 
+                    <span><input type="email" placeholder="Email ID" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email ID'"></span>
+                    
+													<span><button type="submit" class="btn">Reset</button></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Forgot Passwword Ends --> 
+  </div>
+</div>
+<div class="container">
+  <div class="main-content-panel order-items">
+    <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-9">
+    <div class="items-order">
+    <!-- Nav tabs -->
+    <div class="col-sm-3 col-md-3 col-lg-3">
+    <div class="tabbable">
+<ul class="nav nav-tabs nav-stacked">
+
+  <li class="active"><a href="#burgers" data-toggle="tab"><img src="img/burger-icn.png" alt="" title="">Burgers</a></li>
+  <li><a href="#salads" data-toggle="tab"><img src="img/salad-icn.png" alt="" title="">Salads</a></li>
+  <li><a href="#wraps" data-toggle="tab"><img src="img/wraps-icn.png" alt="" title="">Wraps</a></li>
+  <li><a href="#sides" data-toggle="tab"><img src="img/sides-icn.png" alt="" title="">Sides</a></li>
+  <li><a href="#desserts" data-toggle="tab"><img src="img/deserts-icn.png" alt="" title="">Desserts</a></li>
+  <li><a href="#drinks" data-toggle="tab"><img src="img/drinks-icn.png" alt="" title="">Drinks</a></li>
+  <li><a href="#combos" data-toggle="tab"><img src="img/combos-icn.png" alt="" title="">Combos</a></li>
+  <li><a href="#myfav" data-toggle="tab"><img src="img/favourite-icn.png" alt="" title="">My Fav</a></li>
+</ul>
+</div>
+</div>
+<!-- Tab panes -->
+ <div class="col-sm-9 col-md-9 col-lg-9">
+<div class="tab-content">
+  <div class="tab-pane fade in active" id="burgers">
+  <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#beef-burgers">
+         <h2>Beef Burgers</h2>
+        </a>
+      </h4>
+    </div>
+    <div id="beef-burgers" class="panel-collapse collapse in">
+      <div class="panel-body">
+      <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/burgers/whammy_burger.png" alt="Whammy Burger" title="Whammy Burger">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8 item-detail">
+   <h4>Whammy Burger</h4>
+   <strong>19 DHS</strong>
+   
+   
+    </div>
+    <a data-toggle="modal" href="#add-Whammy" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+ </div>
+ <div id="add-whammy" class="modal fade" tabindex="-1" data-replace="true" style="display: none;">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 class="modal-title">A Fairly Long Modal</h4>
+  </div>
+  <div class="modal-body">
+    <button class="btn btn-default" data-toggle="modal" href="#notlong" style="position: absolute; top: 50%; right: 12px">Not So Long Modal</button>
+    <img style="height: 800px" src="http://i.imgur.com/KwPYo.jpg">
+  </div>
+  <div class="modal-footer">
+    <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+  </div>
+</div>
+<div class="modal fade bs-example-modal-lg orders-items-detail" id="add-Whammy" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><i class="close-icn">&times;</i></button>
+        <h4 class="modal-title" id="myModalLabel">Whammy Burger</h4>
+        <p>100% flame broiled pure beef patty topped with ketchup, pickles, sliced onion, tomato, freshly cut lettuce and creamy mayonnaise on a toasted soft sesame seed bun.</p>
+      </div>
+      <div class="modal-body add-items">
+      <div class="simpleCart_shelfItem">
+      <div class="burger-size burger-customize">
+        <h3>Choose Quantity</h3>
+        <input type="number" class="item_quantity" value="1" placeholder="2" onfocus="this.placeholder = ''" onblur="this.placeholder = '1'"> 
+         <span class="item_name">Whammy Burger</span>
+        <span class="order-qty-price item_price">AED 19</span>
+        </div>
+             <div class="burger-bun burger-customize">
+        <h3>Change your Bun</h3>
+       <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"> Plain white bun <span>AED 0.7</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+      <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Brioche Buns <span>AED 1</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" checked> White bun with sesame seeds <span>AED 0.8</span></label>
+       </div>
+       </div>
+       <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="radio" name="optionsRadios" id="optionsRadios4" value="option4"> English Muffin <span>AED 0.9</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="radio" name="optionsRadios" id="optionsRadios5" value="option5"> Ciabatta <span>AED 0.7</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="radio" name="optionsRadios" id="optionsRadios6" value="option6"> No bun: lettuce wrap, please!</label>
+       </div>
+        </div>	
+        </div>
+        <div class="burger-bun burger-customize">
+        <h3>Cheese</h3>
+       <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Blue Cheese <span>AED 0.6</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+      <label><input type="checkbox"> American Cheese <span>AED 0.7</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Cheddar Cheese <span>AED 1</span></label>
+       </div>
+       </div>
+       <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox" checked> Swiss Cheese <span>AED 1</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Pepperjack Jack cheese <span>AED 0.9</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Pimento Cheese <span>AED 0.8</span></label>
+       </div>
+        </div>
+        </div>
+        <div class="burger-bun burger-customize">
+        <h3>Sauces and Dressings</h3>
+       <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox" checked> Creamy Mayonnaise <span>AED 0.5</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+      <label><input type="checkbox"> Spicy Chipotle Sauce <span>AED 0.9</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Ranch Dressing <span>AED 0.7</span></label>
+       </div>
+       </div>
+       <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Bourbon Barbecue Sauce <span>AED 1</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Smash Sauce <span>AED 1</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox" checked> Ketchup <span>AED 0.8</span></label>
+       </div>
+        </div>
+        <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Teriyaki Sauce <span>AED 1</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Stone Ground Mustard <span>AED 1.2</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Caesar Dressing <span>AED 1.5</span></label>
+       </div>
+        </div>
+        </div>
+        <div class="burger-bun burger-customize">
+        <h3>Toppings</h3>
+       <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox" checked> Lettuce <span>AED 0.9</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+      <label><input type="checkbox" checked> Fresh Tomatoes <span>AED 1</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Red Onions <span>AED 0.9</span></label>
+       </div>
+       </div>
+       <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Grilled Onions <span>AED 1</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox" checked> Pickles <span>AED 0.8</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Green Peppers <span>AED 1</span></label>
+       </div>
+        </div>
+        <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Jalapeno Peppers <span>AED 1.2</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Grilled Mushrooms <span>AED 0.9</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Fresh Jalapenos <span>AED 0.8</span></label>
+       </div>
+        </div>
+        <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Bacon <span>AED 1.2</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Avocado <span>AED 2</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Guacamole <span>AED 1.7</span></label>
+       </div>
+        </div>
+        <div class="row">
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Chili <span>AED 0.9</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Peanut Butter <span>AED 2</span></label>
+       </div>
+       <div class="col-sm-4 col-md-4 col-lg-4">
+       <label><input type="checkbox"> Pineapple <span>AED 1</span></label>
+       </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn">Reset</button>
+        <button type="button"data-dismiss="modal" class="btn item_add">Add to Bag</button>
+       
+      </div>
+      </div>
+   </div>
+    </div>
+  </div>
+</div>
+<div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/burgers/jalapeno_whammy.png" alt="Jalapeno Whammy" title="Jalapeno Whammy">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Jalapeno Whammy</h4>
+   <strong>20 DHS</strong>
+    </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+
+</div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/burgers/steakhouse_whammy.png" alt="Steak House Whammy" title="Steak House Whammy">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Steak House Whammy</h4>
+   <strong>20 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/burgers/guacamole_whammy.png" alt="Guacamole Whammy" title="Guacamole Whammy">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Guacamole Whammy</h4>
+   <strong>22 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+    </div>
+    <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/burgers/Double-D-Burger.png" alt="Double D Burger" title="Double D Burger">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Double D Burger</h4>
+   <strong>17 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/burgers/Big-World.png" alt="Big World" title="Big World">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Big World</h4>
+   <strong>23 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+    </div>
+    <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/burgers/Small-World.png" alt="Small World" title="Small World">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Small World</h4>
+   <strong>19 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+    </div>
+    <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/burgers/Mushroom-Swiss.png" alt="Mushroom & Swiss" title="Mushroom & Swiss">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Mushroom & Swiss</h4>
+   <strong>20 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+    </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#chicken-burgers">
+          <h2>Chicken Burgers</h2>
+        </a>
+      </h4>
+    </div>
+
+       <div id="chicken-burgers" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/burgers/chickenWhammyGrilled.png" alt="Chicken Whammy Grilled" title="Chicken Whammy Grilled">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8 item-detail">
+   <h4>Chicken Whammy Grilled</h4>
+   <strong>19 DHS</strong>
+    </div>
+    <a class="add-item" href="#">Add Item <i class="fa fa-plus-circle"></i></a>	
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/burgers/doubleDChicken.png" alt="Double D Chicken Burger" title="Double D Chicken Burger">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8 item-detail">
+   <h4>Double D Chicken Burger</h4>
+   <strong>18 DHS</strong>
+   
+    </div>
+       <a href="#" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/burgers/chickenAmigos.png" alt="Chicken Amigos" title="Chicken Amigos">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8 item-detail">
+   <h4>Chicken Amigos</h4>
+   <strong>18 DHS</strong>
+   
+    </div>
+       <a href="#" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/burgers/jrchickenBurger.png" alt="Jr Chicken Burger" title="Jr Chicken Burger">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8 item-detail">
+   <h4>Jr Chicken Burger</h4>
+   <strong>17 DHS</strong>
+   
+    </div>
+       <a href="#" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+
+ </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#fish-burgers">
+          <h2>Fish Burgers</h2>
+        </a>
+      </h4>
+    </div>
+    <div id="fish-burgers" class="panel-collapse collapse">
+      <div class="panel-body">
+       <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/burgers/fish-fillet.png" alt="Fish Fillet" title="Fish Fillet">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8 item-detail">
+   <h4>Fish Fillet</h4>
+   <strong>17 DHS</strong>
+    </div>
+       <a href="#" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+ </div>
+ 
+      </div>
+    </div>
+  </div>
+</div>
+  
+ 
+ 
+
+ 
+  </div>
+  <div class="tab-pane fade" id="salads">
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/salads/grilled-chicken-salad.png" alt="Grilled Chicken Salad" title="Grilled Chicken Salad">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Grilled Chicken Salad</h4>
+   <strong>15 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/salads/crispy-chicken-salad.png" alt="Crispy Chicken Salad" title="Crispy Chicken Salad">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Crispy Chicken Salad</h4>
+   <strong>15 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+    
+ </div>
+ 
+ 
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/salads/garden-salad.png" alt="Garden Salad" title="Garden Salad">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Garden Salad</h4>
+   <strong>10 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/salads/grilled-chicken-salad.png" alt="Grilled Chicken Salad" title="Grilled Chicken Salad">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Grilled Chicken Salad</h4>
+   <strong>15 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+ </div>
+
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/salads/grilled-chicken-salad.png" alt="Grilled Chicken Salad" title="Grilled Chicken Salad">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Grilled Chicken Salad</h4>
+   <strong>15 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/salads/crispy-chicken-salad.png" alt="Crispy Chicken Salad" title="Crispy Chicken Salad">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Crispy Chicken Salad</h4>
+   <strong>15 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/salads/garden-salad.png" alt="Garden Salad" title="Garden Salad">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Garden Salad</h4>
+   <strong>10 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/salads/grilled-chicken-salad.png" alt="Grilled Chicken Salad" title="Grilled Chicken Salad">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Grilled Chicken Salad</h4>
+   <strong>15 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+    </div>
+
+  </div>
+  <div class="tab-pane fade" id="wraps">
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/wraps/chicken-wrap.png" alt="Chicken Wrap" title="Chicken Wrap">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Chicken Wrap</h4>
+   <strong>12 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/wraps/grilled-chicken-wrap.png" alt="Grilled Chicken Wrap" title="Grilled Chicken Wrap">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Grilled Chicken Wrap</h4>
+   <strong>18 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+    </div>
+
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/wraps/chicken-wrap.png" alt="Chicken Wrap" title="Chicken Wrap">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Chicken Wrap</h4>
+   <strong>12 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/wraps/grilled-chicken-wrap.png" alt="Grilled Chicken Wrap" title="Grilled Chicken Wrap">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Grilled Chicken Wrap</h4>
+   <strong>18 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+    </div>
+
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/wraps/chicken-wrap.png" alt="Chicken Wrap" title="Chicken Wrap">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Chicken Wrap</h4>
+   <strong>12 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/wraps/grilled-chicken-wrap.png" alt="Grilled Chicken Wrap" title="Grilled Chicken Wrap">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Grilled Chicken Wrap</h4>
+   <strong>18 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    
+    </div>
+
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/wraps/chicken-wrap.png" alt="Chicken Wrap" title="Chicken Wrap">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Chicken Wrap</h4>
+   <strong>12 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/wraps/grilled-chicken-wrap.png" alt="Grilled Chicken Wrap" title="Grilled Chicken Wrap">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Grilled Chicken Wrap</h4>
+   <strong>18 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    </div>
+ </div>
+  <div class="tab-pane fade" id="sides">
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/sides/chickenNuggets.png" alt="Chicken Nuggets" title="Chicken Nuggets">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Chicken Nuggets</h4>
+   <strong>11 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+ </div>
+ <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/sides/chickenStripers.png" alt="Chicken Stripes" title="Chicken Stripes">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Chicken Stripes</h4>
+   <strong>10 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    </div>
+    <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/sides/mozzarellaSticks.png" alt="Mozzarella Sticks" title="Mozzarella Sticks">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Mozzarella Sticks</h4>
+   <strong>12 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    </div>
+    <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/sides/frenchFries.png" alt="French Fries" title="French Fries">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>French Fries</h4>
+   <strong>9 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    </div>
+    <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/sides/curlyFries.png" alt="Curly Fries" title="Curly Fries">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Curly Fries</h4>
+   <strong>10 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    </div>
+    <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/sides/sides-onion-rings.png" alt="Onion Rings" title="Onion Rings">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Onion Rings</h4>
+   <strong>9 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    </div>
+ </div>
+
+  <div class="tab-pane fade" id="desserts">
+  <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/desserts/ice.png" alt="Ice Cream Cone" title="Ice Cream Cone">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Ice Cream Cone</h4>
+   <strong>10 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    </div>
+    <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/desserts/floats.png" alt="Floats" title="Floats">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Floats</h4>
+   <strong>10 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    </div>
+    <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/desserts/ApplePie.png" alt="Apple Pie" title="Apple Pie">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Apple Pie</h4>
+   <strong>10 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    </div>
+  </div>
+  <div class="tab-pane fade" id="drinks">
+  <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/drinks/water.png" alt="Bottled Still Water" title="Bottled Still Water">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Bottled Still Water</h4>
+   <strong>10 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    </div>
+    <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/drinks/pepsi.png" alt="Pepsi" title="Pepsi">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Pepsi</h4>
+   <strong>10 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    </div>
+    
+  </div>
+  <div class="tab-pane fade" id="combos">
+  <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/combos/kids-nuggets-combo.png" alt="Nuggets Kids Combo" title="Nuggets Kids Combo">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Nuggets Kids Combo</h4>
+   <strong>10 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    </div>
+    <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/combos/chickenkids-combo.png" alt="Chicken Kids Combo" title="Chicken Kids Combo">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Chicken Kids Combo</h4>
+   <strong>10 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    </div>
+    <div class="item col-lg-6 col-md-6 col-sm-6">
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   <img src="img/combos/combo1.png" alt="Whammy Combo" title="Whammy Combo">
+    </div>
+     <div class="col-lg-8 col-md-8 col-sm-8  item-detail">
+   <h4>Whammy Combo</h4>
+   <strong>10 DHS</strong>
+   </div><a href="" class="add-item">Add Item <i class="fa fa-plus-circle"></i></a>	
+    
+    </div>
+  </div>
+  <div class="tab-pane fade" id="myfav"><br>
+  <h3>Save Burgers with your favourite toppings and also share them with your friends for group ordering</h3>
+  <p><a data-toggle="modal" href="#login">Login</a> to your accout and save your items.</p>
+  
+  </div>
+</div>
+ </div>
+</div>
+
+    </div>
+    <div class="col-lg-3 col-md-12 col-sm-12">
+    <div class="addcart">
+    <h2><i class="fa fa-shopping-cart"></i>  Your Bag</h2>
+    <div class="empty-bag"><br>
+    <div class="simpleCart_items"></div>
+    <p class="total-value">
+	<span class="simpleCart_total"></span> (<span class="simpleCart_quantity"></span> items)
+	<br />
+	
+	</p>
+    </div><br>
+    
+   <h4>Choose the path to get your Burger</h4>
+   <div class="entry-post">
+
+<div class="option"> <label><img src="img/pickup-icn-ylw.png" alt="Pick Up" title="Pick Up"></label>
+   <input id="inlineradio1" name="sampleinlineradio" value="option1" type="radio" data-toggle="collapse"  class="entry-title radio"> Takeaway
+   
+   <div class="entry-content"><br><div class="pickup">
+  <input type="text" value="" id="datetimepicker" class="input-block-level" placeholder="Select Pickup Date and Time" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Select Pickup Date and Time'"/>
+                        <a class="btn pull-right" href="takeaway-order-confirmation.html">Checkout <i class="fa fa-arrow-right"></i></a> 
+            
+     </div>
+</div>
+   </div>
+   </div>
+<div class="option"> <label><img src="img/delivery-icn-ylw.png" alt="Delivery" title="Delivery"></label>
+   <input id="inlineradio1" name="sampleinlineradio" value="option2" type="radio" data-toggle="collapse" data-target="#delivery" data-parent="#collapse" class="entry-title radio">
+    Delivery<div class="entry-content"><br><div class="delivery">
+      
+     
+         <a class="btn pull-right" data-toggle="modal" href="#login">Checkout <i class="fa fa-arrow-right"></i></a> 
+
+        </div>
+
+</div></div>
+
+   </div>
+
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+</div>
+<footer>
+  <div class="footer">
+    <div class="container row">
+      <div class="col-lg-10 col-md-10 col-sm-10 text-left"> Copyright &copy; 2013 burgerworldme.com. All Rights Reserved. | <a href="http://www.triadwebdesign.com/" target="_blank">Website Design By Triad Web Design</a> </div>
+      <div class="col-lg-2 col-md-2 col-sm-2 text-right"> <img src="img/footer-logo.png" alt="Burger World" title="Burger World"> </div>
+    </div>
+  </div>
+  <div class="container ftr-btm-links"> <a href="" class="first-link">Home</a>| <a href="">Menu</a>| <a href="">About</a>| <a href="">Franchise</a>| <a href="">Promotions</a>| <a href="">Careers</a>| <a href="">Locations</a>| <a href="">Contact Us</a>| <a href="">Sitemap</a> </div>
+</footer>
+
+<!-- JavaScript --> 
+
+<script src="js/jquery-1.11.0.min.js"></script> 
+<script src="js/bootstrap.js"></script> 
+
+
+<script>
+		$('.accordion-toggle').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $collapse = $this.closest('.collapse-group').find('.collapse');
+
+   });
+</script>
+<script>
+jQuery(document).ready(function($) {
+$(".entry-content").hide('slow');
+$(".entry-title").click(function() {
+    $(".entry-content").hide();
+$(this).parent().children(".entry-content").slideToggle(500); });
+});
+</script>
+	<script>
+$(function(){
+    $('.logo').data('size','big');
+});
+
+$(window).scroll(function(){
+    var $nav = $('.logo');
+    if ($('body').scrollTop() > 0) {
+        if ($nav.data('size') == 'big') {
+            $nav.data('size','small').stop().animate({
+                height:'80px'
+            }, 600);
+        }
+    } else {
+        if ($nav.data('size') == 'small') {
+            $nav.data('size','big').stop().animate({
+                height:'136px'
+            }, 600);
+        }  
+    }
+});
+</script>	
+<script src="js/jquery.nicescroll.min.js"></script> 
+<script>// Hide Overflow of Body on DOM Ready //
+$(document).ready(function(){  
+    var nice=$('html').niceScroll({cursorborder:"",cursorcolor:"#d08f04",cursorwidth:"5px"});
+});
+
+$(".add-items").niceScroll({cursorborder:"",cursorcolor:"#fcb831",cursoropacitymax:0.7,boxzoom:false,touchbehavior:true,autohidemode: false});
+</script> 
+<script type="text/javascript" src="js/jquery.datetimepicker.js"></script>
+<script type="text/javascript">
+$('#datetimepicker').datetimepicker()
+	.datetimepicker({value:'',step:10});
+
+
+</script>
+		
+    <script type="text/javascript" src="js/simpleCart.js"></script> 
+    <script type="text/javascript" src="js/custom-form-elements.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/classie.js"></script>
+		<script src="js/uiProgressButton.js"></script>
+		<script>
+			[].slice.call( document.querySelectorAll( '.progress-button' ) ).forEach( function( bttn, pos ) {
+				new UIProgressButton( bttn, {
+					callback : function( instance ) {
+						var progress = 0,
+							interval = setInterval( function() {
+								progress = Math.min( progress + Math.random() * 0.1, 1 );
+								instance.setProgress( progress );
+
+								if( progress === 1 ) {
+									instance.stop( pos === 1 || pos === 3 ? -1 : 1 );
+									clearInterval( interval );
+								}
+							}, 30 );
+					}
+				} );
+			} );
+		</script>
+            <script type="text/javascript" src="js/jquery.sidr.min.js"></script> 
+            
+
+</body>
+</html>
